@@ -1,0 +1,4 @@
+# Données EdStats : non versionnées (fichiers trop volumineux).
+# Les *.csv sont ignorés récursivement sous data/ (input/ et output/).
+# Téléchargement via `make download`, voir le README.md à la racine du projet.
+*.csv
