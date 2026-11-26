@@ -21,7 +21,8 @@ flowchart LR
 ## Conventions des notebooks
 
 - Aucune pré-analyse de la part de l'IA : ne jamais signaler à l'avance ce que contiennent les CSV ; l'utilisateur découvre en exécutant le nettoyage
-- Affichage et calcul séparés : un DataFrame chargé pour l'aperçu ne calcule jamais dessus (pas de drop_duplicates, fillna, astype, statistiques)
+- Nettoyage (phase 2) : affichage et calcul séparés, le DataFrame chargé pour l'aperçu ne calcule jamais dessus (pas de drop_duplicates, fillna, astype, statistiques), chaque section recharge son CSV
+- Analyse (phase 3 et +) : un seul chargement par CSV, réutilisé par les cellules ; aucune modification en place du DataFrame chargé (pas de `inplace=True`, pas d'assignation de colonne) : on recharge le CSV si besoin
 - Chaque chiffre écrit en markdown est prouvé par une cellule qui calcule et affiche le résultat
 - Code Python en anglais (variables, fonctions, commentaires, print), markdown en français ; les notebooks `data_overview` et `data_quality` gardent leur code en français (validé avant cette règle)
 - Style simple : boucles `for`, listes, dicts ; éviter `apply`/`lambda` quand une boucle suffit
@@ -30,3 +31,4 @@ flowchart LR
 - Pas de réponses toutes faites : poser les questions ouvertes, fournir les codes d'exploration, laisser l'utilisateur conclure
 - L'IA peut écrire le code s'il reste simple et explicable étape par étape ; les décisions métier (catégories d'indicateurs, années, sélection finale, statistique d'agrégation) restent à l'utilisateur
 - Les notebooks ne contiennent aucun workflow : tasks, commits et statuts vivent uniquement dans GitHub
+- Ne jamais citer les issues GitHub (numéros PHx.y-nn) dans les notebooks ni dans l'analyse : le déroulement du projet n'apparaît pas dans le travail de données
