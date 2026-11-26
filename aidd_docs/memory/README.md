@@ -26,6 +26,10 @@ Refreshed automatically by the memory hook. Do not edit by hand.
 - [project-brief.md](project-brief.md)
 - [testing.md](testing.md)
 - [vcs.md](vcs.md)
+
+Read on demand:
+
+- [external/enonce-exercice-partie-3.md](external/enonce-exercice-partie-3.md)
 <!-- files:end -->
 
 ## Maintaining it

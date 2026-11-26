@@ -52,6 +52,9 @@ Read only task-relevant context and linked memory files; complete required reads
 [aidd_docs/memory/testing.md](aidd_docs/memory/testing.md)
 [aidd_docs/memory/vcs.md](aidd_docs/memory/vcs.md)
 
+<!-- read on demand, not auto-loaded -->
+- aidd_docs/memory/external/enonce-exercice-partie-3.md
+
 <!-- aidd_project_memory:end -->
 
 - Load `aidd_docs/memory/external/*` only when asked.
